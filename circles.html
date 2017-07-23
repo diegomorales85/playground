@@ -4,8 +4,24 @@
 
     <style type="text/css">
         
-        {
-            
+        .circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            float: left;      
+            margin: 50px;
+        }
+        
+        #green{
+         background-color: green
+        }
+        
+        #yellow{
+         background-color: yellow
+        }
+        
+        #red{
+         background-color: red
         }
     
     </style>
@@ -13,8 +29,31 @@
 
 <body>
 
-    <div class="red" id="red"></div>
-    <div class="green" id="red"></div>
-    <div class="blue" id="red"></div>
+    <div class="circle" id="green"></div>
+    <div class="circle" id="yellow"></div>
+    <div class="circle" id="red"></div>
+    
+    <script type="text/javascript">
+        document.getElementById("green").onclick = function(){
+            
+            document.getElementById("green").style.display ="none";
+            
+        }
+        
+        document.getElementById("red").onclick = function(){
+            
+            document.getElementById("red").style.display ="none";
+            
+        }
+        
+        document.getElementById("yellow").onclick = function(){
+            
+            document.getElementById("yellow").style.display ="none";
+            
+        }
+        
+        
+    </script>
+    
 </body>
 </html>
