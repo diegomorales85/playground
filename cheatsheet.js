@@ -18,7 +18,7 @@ document.getElementById("the id name").innerHTML = "Use text";
 document is the actual html you are on. getElementById means go get the of the element, they use the id, innerHTML means get the value of that id and change it. 
 */
 
-//responding to a click, or a button.
+//responding to a click, or a button. 
 
 onclick= fucntion () {
     
