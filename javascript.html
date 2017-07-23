@@ -10,12 +10,42 @@
     
         <h1 id="future">Changing the world for a better future</h1>
         
-        <button onClick="alert ('Diego Morales')">CTA</button>
+        <button id="button">Change the text</button>
+        
+        <p id="secondp">Javascript is . . . </p>
+        
+        <button id="secondb">Change text</button>
+        
+        <button id="thirdb">Make text magically appear</button>
+        
+        <p id="thirdp"></p>
+        
+        <p id="moretext">This some text</p>
+        <button id="styletext">Style text</button>
         
         <script type="text/javascript">
         
-            document.getElementById("future").innerHTML = "Changing the world to make it a better place!"
-        
+            document.getElementById("button").onclick = function() {
+                
+                document.getElementById("future").innerHTML = "Changing the work for a better place by dancing";
+                
+            }
+            
+            document.getElementById("secondb").onclick = function(){
+                
+                document.getElementById("secondp").innerHTML = document.getElementById("secondp").innerHTML + "awesome"
+            }
+            
+            document.getElementById("thirdb").onclick = function() {
+                
+                document.getElementById("thirdp").innerHTML = "I'm now a magician";
+            }
+            
+            document.getElementById("styletext").onclick = function() {
+                
+                document.getElementById("moretext").style.fontSize  = "22px"; document.getElementById("moretext").style.color = "red";
+            }
+    
         </script>
         
     </body>
