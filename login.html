@@ -7,26 +7,27 @@
 
 <body>
 
-    <input type="email" id="user">
-    <button id="login"></button>
+    <p>What is the magic username?</p>
+    <p><input type="email" id="user"></p>
+    <p><button id="login">Login</button></p>
     
     <script type="text/javascript">
         
-        var x = "";
-        x = document.getElementById("").value;
-        
-        if(x == diegomorales85) {
+        document.getElementById("login").onclick = function(){
             
-            alert("Welcome Diego");
-        }
-        
-        else {
+            var magicword = document.getElementById("user").value;
             
-            alert("Wrong username, sorry!")
+            var user = "diegomorales85"
+            
+            if (magicword == user) {
+               
+                alert("You got it!")
+            }
+            else {
+                
+                alert("You got it!")
+            }
         }
-        
-        document.getElementById("login").onclick = 
-
     </script>
 
 </body>
